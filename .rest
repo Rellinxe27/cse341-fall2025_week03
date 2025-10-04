@@ -10,9 +10,9 @@ POST http://localhost:8080/contacts HTTP/1.1
 Content-Type: application/json
 
 {
-  "firstName": "John",
-  "lastName": "Doe",
-  "email": "john.doe@example.com",
+  "firstName": "Bob",
+  "lastName": "Lee",
+  "email": "bob.lee@gmail.com",
   "favoriteColor": "Blue",
   "birthday": "01/15/1990"
 }
