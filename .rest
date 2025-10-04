@@ -1,0 +1,61 @@
+// LOCALHOST
+### Get all contacts
+GET http://localhost:8080/contacts
+
+### Get single contact by ID
+GET http://localhost:8080/contacts/68e04363258e19e4ad2c508f
+
+### Create new contact
+POST http://localhost:8080/contacts HTTP/1.1
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@example.com",
+  "favoriteColor": "Blue",
+  "birthday": "01/15/1990"
+}
+
+### Update contact
+PUT http://localhost:8080/contacts/68e04363258e19e4ad2c508f HTTP/1.1
+Content-Type: application/json
+
+{
+  "firstName": "Ashley",
+  "lastName": "McArthey",
+  "email": "Ashley@gmail.com",
+  "favoriteColor": "Green",
+  "birthday": "03/20/1992"
+}
+
+### Delete contact
+DELETE http://localhost:8080/contacts/68e04363258e19e4ad2c508f HTTP/1.1
+
+// RENDER (production)
+### Create new contact (Render)
+POST https://cse341-fall2025-week02.onrender.com/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Jade",
+  "lastName": "Hoffman",
+  "email": "jade@gmail.com",
+  "favoriteColor": "Blue",
+  "birthday": "01/15/1990"
+}
+
+### Update contact (Render)
+PUT https://cse341-fall2025-week02.onrender.com/contacts/ HTTP/1.1
+Content-Type: application/json
+
+{
+  "firstName": "Britney",
+  "lastName": "Doe",
+  "email": "jbritney@gmail.com",
+  "favoriteColor": "Green",
+  "birthday": "03/20/1992"
+}
+
+### Delete contact (Render)
+DELETE https://cse341-fall2025-week02.onrender.com/contacts/ HTTP/1.1
